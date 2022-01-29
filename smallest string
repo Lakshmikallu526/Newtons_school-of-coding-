@@ -1,0 +1,22 @@
+t=int(input())
+for j in range(0,t):
+ s="abcdefghijklmnopqrstuvwxyz"
+ a,b=list(map(int,input().split()))
+ a,b=int(a),int(b)
+ if a<b:
+  print(-1)
+ elif a>b and b==1:
+  print(-1)
+ elif a==b:
+  print(s[0:a])
+ else:
+  k=''
+  m=''
+  k=s[0:b]
+  k=k * a
+  m=k[0:a]
+   #print(k)
+  #print(m)
+  for i in m:
+   print(i,end='')
+  print()
